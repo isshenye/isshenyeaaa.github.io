@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, 大数据，人工智能，机器学习">
+    <meta name="keywords" content="大数据，人工智能，机器学习">
     <meta name="description" content="大数据，人工智能，机器学习技术分享">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | BigDataGuide</title>
+    <title>BigDataGuide</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -420,12 +420,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -553,7 +553,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-01
+                    2021-04-06
                 </div>
                 
 
@@ -574,19 +574,84 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></tbody></table></figure>
+                <figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">--video表</span><br><span class="line">create external table video_ori(</span><br><span class="line">videoId string,</span><br><span class="line">uploader string,</span><br><span class="line">age int,</span><br><span class="line">category array&lt;string&gt;,</span><br><span class="line">length int,</span><br><span class="line">views int,</span><br><span class="line">rate float,</span><br><span class="line">ratings int,</span><br><span class="line">comments int,</span><br><span class="line">relatedId array&lt;string&gt;)</span><br><span class="line">row format delimited fields terminated by "\t"</span><br><span class="line">collection items terminated by "&amp;"</span><br><span class="line">location '/gulivideo/video';</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">--user表</span><br><span class="line">create external table user_ori(</span><br><span class="line">uplodaer string,</span><br><span class="line">videos int,</span><br><span class="line">friends int)</span><br><span class="line">row format delimited</span><br><span class="line">fields terminated by "\t"</span><br><span class="line">location '/gulivideo/user';</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">--video_orc表</span><br><span class="line">create table video_orc(</span><br><span class="line">videoId string,</span><br><span class="line">uploader string,</span><br><span class="line">age int,</span><br><span class="line">category array&lt;string&gt;,</span><br><span class="line">length int,</span><br><span class="line">views int,</span><br><span class="line">rate float,</span><br><span class="line">ratings int,</span><br><span class="line">comments int,</span><br><span class="line">relatedId array&lt;string&gt;)</span><br><span class="line">stored as orc</span><br><span class="line">tblproperties("orc.compress"="SNAPPY");</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></tbody></table></figure>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">--user_orc表</span><br><span class="line">create table user_orc(</span><br><span class="line">uploader string,</span><br><span class="line">video int,</span><br><span class="line">friends int)</span><br><span class="line">stored as orc</span><br><span class="line">tblproperties("orc.compress"="SNAPPY");</span><br></pre></td></tr></tbody></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">--从外部表中插入数据</span><br><span class="line">insert into table video_orc select * from video_ori;</span><br><span class="line">insert into table user_orc select * from user_ori;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="1-统计视频观看数top10"><a href="#1-统计视频观看数top10" class="headerlink" title="1.统计视频观看数top10"></a>1.统计视频观看数top10</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select </span><br><span class="line">videoId,views</span><br><span class="line">from</span><br><span class="line">video_orc</span><br><span class="line">order by</span><br><span class="line">views desc</span><br><span class="line">limit 10;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="2-统计视频类别热度top10"><a href="#2-统计视频类别热度top10" class="headerlink" title="2.统计视频类别热度top10"></a>2.统计视频类别热度top10</h2><p>1.定义视频类别热度（假设按照类别下视频的个数来决定）</p>
+<p>2.炸开类别(t1)</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoId,cate</span><br><span class="line">from</span><br><span class="line">video_orc lateral view explode(category) tbl as cate;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.统计各个类别有多少视频，并取排序前十</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">cate,</span><br><span class="line">count(videoId) n</span><br><span class="line">from </span><br><span class="line">t1</span><br><span class="line">group by cate</span><br><span class="line">order by </span><br><span class="line">n desc</span><br><span class="line">limit 2;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="3-统计出视频观看数最高的20个视频的所属类别以及类别包含top20视频的个数"><a href="#3-统计出视频观看数最高的20个视频的所属类别以及类别包含top20视频的个数" class="headerlink" title="3.统计出视频观看数最高的20个视频的所属类别以及类别包含top20视频的个数"></a>3.统计出视频观看数最高的20个视频的所属类别以及类别包含top20视频的个数</h2><p>1.统计前20视频和其类别</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoid,views,category</span><br><span class="line">from</span><br><span class="line">video_orc</span><br><span class="line">order by</span><br><span class="line">views desc</span><br><span class="line">limit 20;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.打散类别</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoid,cate</span><br><span class="line">from</span><br><span class="line">t1 lateral view expplode(category) tbl as cate;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.按照类别统计个数</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">cate,count(videoid) n</span><br><span class="line">from</span><br><span class="line">t2</span><br><span class="line">group by</span><br><span class="line">cate</span><br><span class="line">order by</span><br><span class="line">n desc;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="4-统计视频观看数top50所关联视频的所属类别排序"><a href="#4-统计视频观看数top50所关联视频的所属类别排序" class="headerlink" title="4.统计视频观看数top50所关联视频的所属类别排序"></a>4.统计视频观看数top50所关联视频的所属类别排序</h2><p>1.统计观看数前50的视频的关联视频</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoid,views,relatedid</span><br><span class="line">from</span><br><span class="line">video_orc</span><br><span class="line">order by</span><br><span class="line">views desc</span><br><span class="line">limit 50;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.炸开关联视频</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">explode(relatedid) videoid</span><br><span class="line">from</span><br><span class="line">t1;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.和原表join获取类别</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">distinct t2.videoid,</span><br><span class="line">v.category</span><br><span class="line">from</span><br><span class="line">t2</span><br><span class="line">join video_orc v on</span><br><span class="line">t2.videoid=v.videoid;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>4.炸开类别</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">explode(category) cate</span><br><span class="line">from</span><br><span class="line">t3;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>5.和类别热度表(t5)join，排序</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">distinct t4.cate,t5.n</span><br><span class="line">from</span><br><span class="line">t4</span><br><span class="line">join t5 on</span><br><span class="line">t4.cate=t5.cate</span><br><span class="line">order by</span><br><span class="line">t5.n desc;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="5-统计每个类别中的视频热度top10，以music为例"><a href="#5-统计每个类别中的视频热度top10，以music为例" class="headerlink" title="5.统计每个类别中的视频热度top10，以music为例"></a>5.统计每个类别中的视频热度top10，以music为例</h2><p>1.把视频表的类别炸开</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">create table video_category</span><br><span class="line">stored as orc TBLPROPERTIES("orc.compress"="SNAPPY") as select</span><br><span class="line">videoid,uploader,age,cate,length,views,rate,ratings,comments,relatedid</span><br><span class="line">from</span><br><span class="line">video_orc</span><br><span class="line">lateral view explode(category) tbl as cate limit 100;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.从video_category直接查询music类的前10视频</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoid,views </span><br><span class="line">from</span><br><span class="line">video_category</span><br><span class="line">where</span><br><span class="line">cate="Music"</span><br><span class="line">order by</span><br><span class="line">views desc</span><br><span class="line">limit 10;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="6-统计每个类别中视频流量top10，以music为例"><a href="#6-统计每个类别中视频流量top10，以music为例" class="headerlink" title="6.统计每个类别中视频流量top10，以music为例"></a>6.统计每个类别中视频流量top10，以music为例</h2><p>1.从video_category直接查阅Music类的流量前10视频</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoid,ratings</span><br><span class="line">from </span><br><span class="line">video_category</span><br><span class="line">where</span><br><span class="line">cate="Music"</span><br><span class="line">order by</span><br><span class="line">ratings desc</span><br><span class="line">limit 10;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="7-统计上传视频最多的用户top10以及他们上传的观看次数在前20的视频"><a href="#7-统计上传视频最多的用户top10以及他们上传的观看次数在前20的视频" class="headerlink" title="7.统计上传视频最多的用户top10以及他们上传的观看次数在前20的视频"></a>7.统计上传视频最多的用户top10以及他们上传的观看次数在前20的视频</h2><h4 id="理解一：前10用户每人前20："><a href="#理解一：前10用户每人前20：" class="headerlink" title="理解一：前10用户每人前20："></a>理解一：前10用户每人前20：</h4><p>1.统计视频上传最多的用户top10</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">uploader,video</span><br><span class="line">from</span><br><span class="line">user_orc</span><br><span class="line">order by</span><br><span class="line">video desc</span><br><span class="line">limit 10;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.与video_orc联立，找出这些用户上传的视频，并按照热度排名</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">t1.uploader,v.videoid,rank() over(partition by t1.uploader order by v.views desc) hot</span><br><span class="line">from</span><br><span class="line">t1</span><br><span class="line">left join video_orc v on</span><br><span class="line">t1.uploder=v.uploader;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.求每个人的前20</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">t2.uploader,t2.videoid,t2.hot</span><br><span class="line">from t2</span><br><span class="line">where</span><br><span class="line">hot&lt;=20;</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="理解二：前10用户总榜前20"><a href="#理解二：前10用户总榜前20" class="headerlink" title="理解二：前10用户总榜前20"></a>理解二：前10用户总榜前20</h4><p>1.统计视频上传最多用户top10</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">uploader,video</span><br><span class="line">from</span><br><span class="line">user_orc</span><br><span class="line">order by</span><br><span class="line">video desc</span><br><span class="line">limit 10;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.观看前20的视频</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">videoid,uploader,views</span><br><span class="line">from</span><br><span class="line">video_orc</span><br><span class="line">order by</span><br><span class="line">views desc</span><br><span class="line">limit 20;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>3.联立两表，看看有没有他们上传的</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">t1.uploader,t2.videoid</span><br><span class="line">from t1</span><br><span class="line">left join t2 on</span><br><span class="line">t1.uploader=t2.uploader;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="8-统计每个类别视频观看数top10"><a href="#8-统计每个类别视频观看数top10" class="headerlink" title="8.统计每个类别视频观看数top10"></a>8.统计每个类别视频观看数top10</h2><p>1.从video_category表查出每个类别视频观看数排名</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">cate,videoid,views,rank() over(partition by cate order by views desc) hot</span><br><span class="line">from</span><br><span class="line">video_category;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>2.取每个类别的top10</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">select</span><br><span class="line">cate,videoid,views</span><br><span class="line">from t1</span><br><span class="line">where</span><br><span class="line">hot&lt;=10;</span><br></pre></td></tr></tbody></table></figure>
+
+
+
 
                 
             </div>
@@ -613,7 +678,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://isshenye.github.io/2021/04/01/hello-world/">http://isshenye.github.io/2021/04/01/hello-world/</a>
+                    <a href="http://isshenye.github.io/2021/04/06/tong-ji-huo-gu-ying-yin-shi-pin-de-ge-chong-topn-zhi-biao/">http://isshenye.github.io/2021/04/06/tong-ji-huo-gu-ying-yin-shi-pin-de-ge-chong-topn-zhi-biao/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -820,54 +885,18 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2021/04/02/da-shu-ju/">
+                <a href="/2021/04/06/tong-ji-huo-gu-ying-yin-shi-pin-de-ge-chong-topn-zhi-biao/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="大数据">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
                         
-                        <span class="card-title">大数据</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-02
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-user fa-fw"></i>
-                            YeeSen
-                            
-                        </span>
-                    </div>
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/2021/04/01/hello-world/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title"></span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -878,7 +907,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-06
                             </span>
                         <span class="publish-author">
                             
@@ -889,6 +918,43 @@
                     </div>
                 </div>
 
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2021/04/02/test00/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="test00">
+                        
+                        <span class="card-title">test00</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-02
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            YeeSen
+                            
+                        </span>
+                    </div>
+                </div>
                 
             </div>
         </div>
